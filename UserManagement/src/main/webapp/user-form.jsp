@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
 <title>User Management Application</title>
@@ -31,6 +30,7 @@
                     <form action="update" method="post">
                 </c:if>
                 <c:if test="${user == null}">
+                
                     <form action="insert" method="post">
                 </c:if>
 
